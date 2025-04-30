@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 易优鲜</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="易优鲜">
+                <h1>易优鲜</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索商品...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html">全部商品</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="profile.html" class="user-icon active"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <section class="page-header">
+            <div class="container">
+                <h1>个人中心</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a> / <span>个人中心</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="profile-content">
+            <div class="container">
+                <div class="profile-layout">
+                    <aside class="profile-sidebar">
+                        <div class="user-info">
+                            <div class="avatar">
+                                <img src="./images/user_avatar.jpeg" alt="用户头像">
+                                <div class="change-avatar">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                            </div>
+                            <h3>李小明</h3>
+                            <p class="user-level">黄金会员</p>
+                            <div class="points">
+                                <i class="fas fa-award"></i> 积分: <strong>1,250</strong>
+                            </div>
+                        </div>
+                        
+                        <ul class="profile-menu">
+                            <li class="active">
+                                <a href="#"><i class="fas fa-user-circle"></i> 个人资料</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-shopping-bag"></i> 我的订单</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-heart"></i> 我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-map-marker-alt"></i> 收货地址</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-credit-card"></i> 支付方式</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-comments"></i> 我的评价</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-ticket-alt"></i> 我的优惠券</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-cog"></i> 账户设置</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-headset"></i> 客户服务</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    
+                    <div class="profile-main">
+                        <div class="profile-section">
+                            <div class="section-header">
+                                <h2>个人资料</h2>
+                                <button class="edit-btn"><i class="fas fa-edit"></i> 编辑</button>
+                            </div>
+                            
+                            <div class="user-profile-form">
+                                <div class="form-group">
+                                    <label>用户名</label>
+                                    <input type="text" value="李小明" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>手机号码</label>
+                                    <input type="text" value="138****8888" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>邮箱</label>
+                                    <input type="email" value="example@mail.com" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>性别</label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" checked disabled> 男
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" disabled> 女
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>出生日期</label>
+                                    <input type="text" value="1990-01-01" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <div class="section-header">
+                                <h2>最近订单</h2>
+                                <a href="#" class="view-all">查看全部 <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            
+                            <div class="order-list">
+                                <div class="order-item">
+                                    <div class="order-header">
+                                        <div class="order-id">
+                                            订单号: <span>2023082501</span>
+                                        </div>
+                                        <div class="order-date">
+                                            2023-08-25
+                                        </div>
+                                        <div class="order-status success">
+                                            已完成
+                                        </div>
+                                    </div>
+                                    <div class="order-products">
+                                        <div class="order-product">
+                                            <img src="./images/bluetooth_earphone.jpeg" alt="无线蓝牙耳机">
+                                            <div class="product-info">
+                                                <h4>高品质无线蓝牙耳机</h4>
+                                                <p class="product-price">¥199 x 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="order-product">
+                                            <img src="./images/loudspeaker.jpeg" alt="便携式蓝牙音箱">
+                                            <div class="product-info">
+                                                <h4>便携式蓝牙音箱</h4>
+                                                <p class="product-price">¥129 x 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-footer">
+                                        <div class="order-total">
+                                            合计: <span class="price">¥328</span>
+                                        </div>
+                                        <div class="order-actions">
+                                            <button class="btn-outline">查看详情</button>
+                                            <button class="btn-primary">再次购买</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-item">
+                                    <div class="order-header">
+                                        <div class="order-id">
+                                            订单号: <span>2023081003</span>
+                                        </div>
+                                        <div class="order-date">
+                                            2023-08-10
+                                        </div>
+                                        <div class="order-status pending">
+                                            待评价
+                                        </div>
+                                    </div>
+                                    <div class="order-products">
+                                        <div class="order-product">
+                                            <img src="./images/watch.jpeg" alt="智能手表健康监测">
+                                            <div class="product-info">
+                                                <h4>智能手表健康监测</h4>
+                                                <p class="product-price">¥329 x 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-footer">
+                                        <div class="order-total">
+                                            合计: <span class="price">¥329</span>
+                                        </div>
+                                        <div class="order-actions">
+                                            <button class="btn-outline">查看详情</button>
+                                            <button class="btn-primary">去评价</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <div class="section-header">
+                                <h2>我的收藏</h2>
+                                <a href="#" class="view-all">查看全部 <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            
+                            <div class="favorites-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="./images/laptop.jpg" alt="超薄笔记本电脑">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>超薄笔记本电脑</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">¥4599</span>
+                                            <span class="original-price">¥5299</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                                        <button class="add-to-cart-btn">加入购物车</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="./images/camera.jpeg" alt="高清智能摄像头">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>高清智能摄像头</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">¥299</span>
+                                            <span class="original-price">¥399</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                                        <button class="add-to-cart-btn">加入购物车</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="./images/power_bank.jpeg" alt="超薄移动电源">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>超薄移动电源</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">¥89</span>
+                                            <span class="original-price">¥139</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                                        <button class="add-to-cart-btn">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <div class="section-header">
+                                <h2>我的优惠券</h2>
+                            </div>
+                            
+                            <div class="coupon-list">
+                                <div class="coupon-card active">
+                                    <div class="coupon-amount">
+                                        <span class="symbol">¥</span>
+                                        <span class="value">50</span>
+                                    </div>
+                                    <div class="coupon-info">
+                                        <h4>新人专享券</h4>
+                                        <p>满300元可用</p>
+                                        <div class="coupon-date">有效期至：2023-12-31</div>
+                                    </div>
+                                    <div class="coupon-status">
+                                        <button class="use-coupon">立即使用</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="coupon-card active">
+                                    <div class="coupon-amount">
+                                        <span class="symbol">¥</span>
+                                        <span class="value">100</span>
+                                    </div>
+                                    <div class="coupon-info">
+                                        <h4>数码产品专用券</h4>
+                                        <p>满1000元可用</p>
+                                        <div class="coupon-date">有效期至：2023-09-30</div>
+                                    </div>
+                                    <div class="coupon-status">
+                                        <button class="use-coupon">立即使用</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="coupon-card expired">
+                                    <div class="coupon-amount">
+                                        <span class="symbol">¥</span>
+                                        <span class="value">20</span>
+                                    </div>
+                                    <div class="coupon-info">
+                                        <h4>会员专享券</h4>
+                                        <p>无门槛</p>
+                                        <div class="coupon-date">已过期</div>
+                                    </div>
+                                    <div class="coupon-status">
+                                        <span class="expired-text">已过期</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">招贤纳士</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>客户服务</h3>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">配送服务</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>商家合作</h3>
+                    <ul>
+                        <li><a href="#">入驻条件</a></li>
+                        <li><a href="#">合作品牌</a></li>
+                        <li><a href="#">广告服务</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>关注我们</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 易优鲜 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
